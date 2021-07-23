@@ -1,0 +1,127 @@
+body
+{
+    font-family: "Ubuntu","Helvetica","Arial",sans-serif;
+    background:#F2F2F2;
+    user-select: none;
+}
+
+.info-table
+{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#data
+{
+    position: absolute;
+    width: 80%;
+    height: 8%;
+    left: 10%;
+    text-align: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+#data:after
+{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 0%;
+    left: 44.2%;
+    height: 3px;
+    background-color: #0749F3;
+    transition: width .8s ease;
+}
+
+#data:hover::after
+{
+    width: 11.8%;
+    cursor: pointer;
+}
+
+#title
+{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 18%;
+    font-size: 40px;
+    border: 1px solid black;
+}
+#qc
+{
+    position: absolute;
+    width: 27%;
+    height: 100%;
+    right: 18.5%;
+    font-size: 40px;
+}
+
+#main-data
+{
+    position: absolute;
+    height: 90%;
+    top: 10%;
+    width: 65%;
+    left: 20%;
+    overflow: auto;
+}
+
+#box
+{
+  position: absolute;
+  width: 40%;
+  height: 8%;
+  top: 2%;
+  text-align: center;
+  font-size: 32px;
+  overflow: hidden;
+  background-color: #0749F3;
+  color: white;
+  border-radius: 4em;
+  border-left: 10px solid white;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+#box:hover
+{
+    background-color: black;
+}
+
+
+.del
+{
+    position: absolute;
+    right: 1%;
+    width: 10%;
+    height: 8%;
+    top: 3%;
+    cursor: pointer;
+    background-image: url("../img/delete.png");
+    background-repeat: no-repeat;
+    background-size:contain ;
+    background-position-x: center;
+    border: 0px;
+    background-color: #F2F2F2;
+}
+
+.rename
+{
+    position: absolute;
+    left: 1%;
+    width: 10%;
+    height: 8%;
+    top: 3%;
+    cursor: pointer;
+    background-image: url("../img/rename.png");
+    background-repeat: no-repeat;
+    background-size:contain ;
+    background-position-x: center;
+    border: 0px;
+    background-color: #F2F2F2;
+}
