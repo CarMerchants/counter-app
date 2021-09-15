@@ -26,7 +26,7 @@ function BACK()
     localStorage.setItem("lname",name.toLowerCase().trim());
     localStorage.setItem("counts",localStorage.getItem(name));
     console.log(localStorage.getItem("counts"));
-    location.href="http://127.0.0.1:8080/";
+    location.href="https://carmerchants.github.io/counter-app/public/";
 }
 
 function RENAME(){
